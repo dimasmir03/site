@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <title>Метавселенная</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="shortcut icon" href="./ico.png" type="ico/png">
+</head>
+
+<body>
+  <div id="app">
+
+
+    <header>
+
+      <img class="icon" width="70px" src="./ico.png">
+      <span class="header">
+        <div @click="status = !status" :class="['img','menu-btn',{'active':status}]">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div :class="['menu2',{'active':status}]">
+          <nav>
+            <ul>
+              <li><a class="m" href="./index.html">Главная</a></li>
+              <li><a class="m" href="./test.html">Ресурсы</a></li>
+              <li><a class="m" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </span>
+
+
+
+
+    </header>
+
+    <main class="main">
+      <div class="about">
+        <h1>Metaverse</h1>
+        <p id="min-about">Метаверс, или метавселенная,
+          <br>виртуальное пространство, имитация трехмерного мира с помощью
+          <br>средств виртуальной и дополненной реальности
+        </p>
+      </div>
+    </main>
+
+
+    <div class="photo"></div>
+
+    <div class="whatit">
+      <span>Что это?</span>
+    </div>
+    <footer class="footer" id="footer">
+      Писать сюда: <a href="https://vk.com/kaneki_huits"> vkontakte</a>
+    </footer>
+  </div>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="Помощник" agent-id="cb022458-c069-4d39-8ddf-43a0f16d5f5f"
+    language-code="ru"></df-messenger>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
